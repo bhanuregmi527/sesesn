@@ -3,8 +3,8 @@ import { buildSEO } from '@/components/SEO';
 import ProductsPage from '@/components/pages/ProductsPage';
 
 export const metadata: Metadata = buildSEO({
-  title: 'Bio-plastic Products',
-  description: 'Explore SESESN’s catalog of water-soluble and water-resistant bio-plastic solutions.',
+  title: 'What We Do',
+  description: 'Manufacturing advanced bioplastic solutions from raw pellets to customized compounds.',
   path: '/products',
 });
 

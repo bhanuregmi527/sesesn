@@ -4,7 +4,7 @@ import AboutPage from '@/components/pages/AboutPage';
 
 export const metadata: Metadata = buildSEO({
   title: 'About SESESN',
-  description: 'Our vision, mission, and Save Earth philosophy behind premium bio-plastic solutions.',
+  description: 'The Name Behind the Mission and the story behind SESESN.',
   path: '/about',
 });
 

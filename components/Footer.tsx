@@ -43,9 +43,12 @@ export default function Footer() {
               </div>
             </div>
             <p className="max-w-md text-sm leading-7 text-white/75">
-              Scientific bio-plastic solutions for brands looking to replace conventional plastics with credible, premium,
-              earth-conscious materials.
+              Scientific bio-plastic solutions built around the SESESN promise: Save Earth, Save Environment, Save Nature.
             </p>
+            <div className="space-y-1 text-sm text-white/75">
+              <p>SESESN, Kathmandu, Nepal</p>
+              <p>sesesnnepal@gmail.com</p>
+            </div>
             <div className="flex flex-wrap gap-3">
               {socialLinks.map(({ label, href, icon: Icon }) => (
                 <Link

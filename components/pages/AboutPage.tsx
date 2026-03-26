@@ -5,18 +5,18 @@ import { Compass, Globe2, HeartHandshake, Leaf, ShieldCheck } from 'lucide-react
 
 const values = [
   {
-    title: 'Vision',
-    description: 'A world where premium materials can protect products and the planet at the same time.',
+    title: 'Belief',
+    description: 'We were founded on a simple yet powerful belief: that industry and nature do not have to be at odds',
     icon: Globe2,
   },
   {
-    title: 'Mission',
-    description: 'To accelerate adoption of bio-plastic alternatives through clarity, science, and design.',
+    title: 'Vision',
+    description: 'Save earth, save environment, save nature and a world where our product protect products and the planet at the same time',
     icon: Compass,
   },
   {
-    title: 'Save Earth philosophy',
-    description: 'Every material decision should respect nature, support circularity, and reduce waste impact.',
+    title: 'Mission',
+    description: 'To replace conventional fossil-based plastics with high-performance, sustainable bioplastics that truly honor our name',
     icon: Leaf,
   },
 ];
@@ -50,10 +50,9 @@ export default function AboutPage() {
       <section className="eco-shell py-20 lg:py-28">
         <div className="max-w-3xl">
           <p className="section-badge">About SESESN</p>
-          <h1 className="section-title mt-5">The Save Earth philosophy behind our bio-plastic solutions.</h1>
+          <h1 className="section-title mt-5">The Name Behind the Mission</h1>
           <p className="section-copy mt-5">
-            SESESN stands for Save Earth Save Environment Save Nature. It is both our purpose and our design filter:
-            make materials that work well, look refined, and move responsibly through the world.
+            SESESN stands for Save Earth Save Environment Save Nature. It is both our purpose and our design filter.
           </p>
         </div>
 
@@ -73,15 +72,14 @@ export default function AboutPage() {
       <section className="eco-shell pb-24">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[2rem] bg-forest p-8 text-white">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sage/90">What we believe</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-snug">Environmental responsibility should feel premium, not restrictive.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sage/90">Our Story</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-snug">The Name Behind the Mission</h2>
             <div className="mt-8 space-y-4 text-sm leading-7 text-white/75">
               <p>
-                We believe eco-conscious material choices should be accessible to teams that care about product quality,
-                customer experience, and measurable outcomes.
+                We were founded on a simple yet powerful belief: that industry and nature do not have to be at odds.
               </p>
               <p>
-                Our work bridges science and storytelling so sustainability claims remain honest, useful, and specific.
+                The SESESN name carries our responsibility to create materials that support better business and a healthier planet.
               </p>
             </div>
           </div>
@@ -115,8 +113,8 @@ export default function AboutPage() {
                 <div>
                   <p className="text-sm font-semibold text-forest">Partnership mindset</p>
                   <p className="mt-2 text-sm leading-7 text-slate-600">
-                    We collaborate with manufacturers, brands, and product teams to find the right balance between function,
-                    compliance, and sustainability messaging.
+                    We collaborate with manufacturers, brands, and product teams to translate vision into practical, premium,
+                    science-led solutions.
                   </p>
                 </div>
               </div>

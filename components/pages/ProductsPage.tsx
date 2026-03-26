@@ -41,10 +41,9 @@ export default function ProductsPage() {
       <section className="eco-shell py-20 lg:py-28">
         <div className="max-w-3xl">
           <p className="section-badge">Products</p>
-          <h1 className="section-title mt-5">A curated catalog of bio-plastic solutions for defined performance needs.</h1>
+          <h1 className="section-title mt-5">What We Do</h1>
           <p className="section-copy mt-5">
-            Our product line is intentionally focused. Each material family is positioned to solve specific application
-            requirements while keeping the sustainability story clear and credible.
+            Manufacturing advanced bioplastic solutions from raw pellets to customized compounds.
           </p>
         </div>
 
@@ -65,14 +64,14 @@ export default function ProductsPage() {
       <section className="eco-shell pb-24">
         <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
           <div className="rounded-[2rem] bg-sand p-8 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-forest/60">Product development</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-snug text-forest">Built for application fit, not just environmental positioning.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-forest/60">Applications</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-snug text-forest">Real-world applications that return to the earth and enrich soil.</h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
-                ['Technical alignment', 'Matching material behavior to use-case conditions.'],
-                ['Premium presentation', 'A product story that feels refined and modern.'],
-                ['Brand support', 'Clear narratives for sustainability teams and sales decks.'],
-                ['Scalable discussions', 'Useful for early pilots and broader conversions.'],
+                ['Packaging', 'Packaging that returns to the earth.'],
+                ['Agriculture', 'Agricultural films that enrich soil.'],
+                ['Retail', 'Premium formats for consumer-facing brands.'],
+                ['Food & beverage', 'Defined-use solutions with clear material performance.'],
               ].map(([title, description]) => (
                 <div key={title} className="rounded-2xl border border-slate-200 bg-white p-4">
                   <p className="text-sm font-semibold text-forest">{title}</p>
@@ -83,18 +82,18 @@ export default function ProductsPage() {
           </div>
 
           <motion.div whileHover={{ y: -6 }} className="rounded-[2rem] bg-forest p-8 text-white">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sage/90">Material intelligence</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-snug">A science-first approach to eco-conscious packaging.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sage/90">Our Commitment</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-snug">Supporting the transition to a circular economy.</h2>
             <p className="mt-4 text-sm leading-7 text-white/75">
               We prioritize performance clarity, responsible end-of-life pathways, and premium tactile quality across the
               portfolio.
             </p>
             <div className="mt-8 space-y-4">
               {[
-                'Formulation discussion',
-                'Multi-layer design thinking',
-                'Defined use-duration strategy',
-                'Packaging-use optimization',
+                'Raw pellets to customized compounds',
+                'Application-led technical development',
+                'Circular economy transition support',
+                'Premium bioplastic product strategy',
               ].map((label, index) => {
                 const Icon = featureIcons[index];
 

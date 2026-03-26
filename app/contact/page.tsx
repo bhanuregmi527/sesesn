@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { buildSEO } from '@/components/SEO';
 
 export const metadata: Metadata = buildSEO({
-  title: 'Contact SESESN',
-  description: 'Send an inquiry about company partnerships, product interest, and custom bio-plastic requirements.',
+  title: 'Join Us',
+  description: 'SESESN, Kathmandu, Nepal — sesesnnepal@gmail.com',
   path: '/contact',
 });
 
@@ -12,23 +12,29 @@ export default function Page() {
     <section className="eco-shell py-20 lg:py-28">
       <div className="max-w-3xl">
         <p className="section-badge">Contact</p>
-        <h1 className="section-title mt-5">Start a professional inquiry with SESESN.</h1>
+        <h1 className="section-title mt-5">Join Us</h1>
         <p className="section-copy mt-5">
-          Share your use case, product interest, and company details so we can align the right bio-plastic solution.
+          Brands, manufacturers, and investors are invited to start a conversation with SESESN.
         </p>
       </div>
 
       <div className="mt-10 grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="rounded-[2rem] bg-forest p-8 text-white">
-          <h2 className="text-3xl font-semibold tracking-snug">Talk to our team</h2>
+          <h2 className="text-3xl font-semibold tracking-snug">SESESN, Kathmandu, Nepal</h2>
           <p className="mt-4 text-sm leading-7 text-white/75">
-            We work with brands and product teams that want eco-conscious materials with premium execution and scientific
-            clarity.
+            sesesnnepal@gmail.com
           </p>
           <div className="mt-8 space-y-4 text-sm text-white/80">
             <p>• Company partnerships</p>
             <p>• Product sampling discussions</p>
             <p>• Custom formulation conversations</p>
+          </div>
+          <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sage/90">Join Us</p>
+            <p className="mt-3 text-sm leading-7 text-white/75">
+              If you are building products, scaling manufacturing, or investing in sustainable materials, we would like
+              to hear from you.
+            </p>
           </div>
         </div>
 
@@ -44,6 +50,7 @@ export default function Page() {
                 <option>Water-Soluble Bio-plastic</option>
                 <option>Water-Resistant Bio-plastic</option>
                 <option>Custom Development</option>
+                <option>General Partnership</option>
               </select>
             </label>
           </div>
