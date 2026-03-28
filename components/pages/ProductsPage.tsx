@@ -8,27 +8,27 @@ const featureIcons = [FlaskConical, Layers3, TimerReset, Package];
 
 const showcaseProducts = [
   {
-    title: 'SESESN Bio-plastic Product 01',
+    title: 'SESESN Compostable Carry Bag',
     image: '/products/product-1.jpeg',
     description: 'Premium eco-friendly packaging format with a clean finish for everyday brand applications.',
   },
   {
-    title: 'SESESN Bio-plastic Product 02',
+    title: 'SESESN Compostable Garbage Bag',
     image: '/products/product-2.jpeg',
     description: 'Designed for responsible use-cases where visual quality and sustainable material story both matter.',
   },
   {
-    title: 'SESESN Bio-plastic Product 03',
+    title: 'SESESN Bioplastic Stretch Film',
     image: '/products/product-3.jpeg',
     description: 'Flexible and durable presentation option for modern retail and packaging environments.',
   },
   {
-    title: 'SESESN Bio-plastic Product 04',
+    title: 'SESESN Biodegradable Shopping Bag',
     image: '/products/product-4.jpeg',
     description: 'Application-ready product style that supports premium appearance with earth-conscious intent.',
   },
   {
-    title: 'SESESN Bio-plastic Product 05',
+    title: 'SESESN Compostable Mailer Bag',
     image: '/products/product-5.jpeg',
     description: 'Showcase-ready sustainable product variant aligned with the SESESN circular material vision.',
   },
@@ -40,18 +40,10 @@ export default function ProductsPage() {
       <section className="eco-shell py-20 lg:py-28">
         <div className="max-w-3xl">
           <p className="section-badge">Products</p>
-          <h1 className="section-title mt-5">What We Do</h1>
-          <p className="section-copy mt-5">
-            Manufacturing advanced bioplastic solutions from raw pellets to customized compounds.
-          </p>
         </div>
 
         <div className="mt-10">
           <h2 className="text-3xl font-semibold tracking-snug text-forest">Product Gallery</h2>
-          <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600">
-            Ecommerce-style listing with product image and short description.
-          </p>
-
           <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {showcaseProducts.map((item) => (
               <motion.article
