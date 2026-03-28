@@ -1,37 +1,36 @@
 "use client";
 
-import ProductCard from '@/components/ProductCard';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FlaskConical, Layers3, Package, TimerReset } from 'lucide-react';
 
 const featureIcons = [FlaskConical, Layers3, TimerReset, Package];
 
-const products = [
+const showcaseProducts = [
   {
-    title: 'Water-Soluble Bio-plastic',
-    badge: 'Short-life precision',
-    href: '/products/water-soluble',
-    description:
-      'For applications that need clean dissolution behavior after use, while keeping packaging and handling refined before deployment.',
-    specs: [
-      { label: 'Use window', value: 'Short cycle' },
-      { label: 'Primary fit', value: 'Inserts, pouches, sachets' },
-      { label: 'Design focus', value: 'Controlled release' },
-      { label: 'Finish', value: 'Smooth premium film' },
-    ],
+    title: 'SESESN Bio-plastic Product 01',
+    image: '/products/product-1.jpeg',
+    description: 'Premium eco-friendly packaging format with a clean finish for everyday brand applications.',
   },
   {
-    title: 'Water-Resistant Bio-plastic',
-    badge: 'Moisture guard',
-    href: '/products/water-resistant',
-    description:
-      'Engineered for applications that need better moisture tolerance and surface integrity without reverting to conventional plastic aesthetics.',
-    specs: [
-      { label: 'Barrier goal', value: 'Improved resistance' },
-      { label: 'Primary fit', value: 'Retail, garments, F&B' },
-      { label: 'Design focus', value: 'Form retention' },
-      { label: 'Finish', value: 'Clean matte or gloss' },
-    ],
+    title: 'SESESN Bio-plastic Product 02',
+    image: '/products/product-2.jpeg',
+    description: 'Designed for responsible use-cases where visual quality and sustainable material story both matter.',
+  },
+  {
+    title: 'SESESN Bio-plastic Product 03',
+    image: '/products/product-3.jpeg',
+    description: 'Flexible and durable presentation option for modern retail and packaging environments.',
+  },
+  {
+    title: 'SESESN Bio-plastic Product 04',
+    image: '/products/product-4.jpeg',
+    description: 'Application-ready product style that supports premium appearance with earth-conscious intent.',
+  },
+  {
+    title: 'SESESN Bio-plastic Product 05',
+    image: '/products/product-5.jpeg',
+    description: 'Showcase-ready sustainable product variant aligned with the SESESN circular material vision.',
   },
 ];
 
@@ -47,17 +46,36 @@ export default function ProductsPage() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
-          {products.map((product) => (
-            <ProductCard
-              key={product.href}
-              title={product.title}
-              badge={product.badge}
-              href={product.href}
-              description={product.description}
-              specs={product.specs}
-            />
-          ))}
+        <div className="mt-10">
+          <h2 className="text-3xl font-semibold tracking-snug text-forest">Product Gallery</h2>
+          <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600">
+            Ecommerce-style listing with product image and short description.
+          </p>
+
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+            {showcaseProducts.map((item) => (
+              <motion.article
+                key={item.title}
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.25 }}
+                className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+              >
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(min-width: 1280px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-forest">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">{item.description}</p>
+                </div>
+              </motion.article>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Linkedin, Mail, MessageSquareText, Sprout, Youtube } from 'lucide-react';
+import { Instagram, Mail, MessageSquareText, Music2, Sprout, Twitter, Youtube } from 'lucide-react';
 
 const companyLinks = [
   { label: 'About Us', href: '/about' },
@@ -21,10 +21,14 @@ const resourceLinks = [
 ];
 
 const socialLinks = [
-  { label: 'Instagram', href: 'https://instagram.com', icon: Instagram },
-  { label: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { label: 'YouTube', href: 'https://youtube.com', icon: Youtube },
-  { label: 'Facebook', href: 'https://facebook.com', icon: Facebook },
+  { label: 'YouTube', href: 'https://www.youtube.com/@sesesn', icon: Youtube },
+  {
+    label: 'TikTok',
+    href: 'https://www.tiktok.com/@sesesn1?_r=1&_d=secCgYIASAHKAESPgo83iYp6%2FU9PJSuZq7pqM8ccJUCK2RaW51P%2FBe3kokzl9shMH%2F49y1zwxNkW4oA8zKVs9NQ94JdnfBSulrPGgA%3D&_svg=1&checksum=b8a79fb1416e1306114a56a49c3850653e1624198f26132e2a2c01807dbc9733&item_author_type=1&sec_uid=MS4wLjABAAAACTb4UQXlgNG8S8ufmmbVgh4fADYznvs421fSAeP4ficJ3FJblWbgPiJXCHfEwtGI&sec_user_id=MS4wLjABAAAACTb4UQXlgNG8S8ufmmbVgh4fADYznvs421fSAeP4ficJ3FJblWbgPiJXCHfEwtGI&share_app_id=1233&share_author_id=7617684050261574676&share_link_id=b01fe96a-39ef-492b-bc0c-499e43bed80e&share_region=NP&share_scene=1&sharer_language=en&social_share_type=5&source=h5_m&timestamp=1774493710&u_code=f2dm688ajkjiim&ug_btm=b8727%2Cb7360&ugbiz_name=ACCOUNT&user_id=7617684050261574676&utm_campaign=client_share&utm_medium=android&utm_source=copy',
+    icon: Music2,
+  },
+  { label: 'X', href: 'https://x.com/sesesnnepal', icon: Twitter },
+  { label: 'Instagram', href: 'https://www.instagram.com/sesesnnepal', icon: Instagram },
 ];
 
 export default function Footer() {
@@ -54,6 +58,8 @@ export default function Footer() {
                 <Link
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/80 transition hover:-translate-y-0.5 hover:bg-sage hover:text-forest"
                   aria-label={label}
                 >
