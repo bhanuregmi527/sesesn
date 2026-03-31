@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Instagram, Mail, MessageSquareText, Music2, Sprout, Twitter, Youtube } from 'lucide-react';
+import { Instagram, MessageSquareText, Music2, Sprout, Twitter, Youtube } from 'lucide-react';
 
 const companyLinks = [
   { label: 'About Us', href: '/about' },

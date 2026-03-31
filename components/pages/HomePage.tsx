@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Leaf, Recycle, ShieldCheck } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
 function CountUp({ end, suffix = '', decimals = 0 }: { end: number; suffix?: string; decimals?: number }) {
@@ -65,24 +65,6 @@ const slides: Slide[] = [
   {
     quote: 'Save Earth Save Environment Save Nature',
     image: "url('/slide3.jpeg')",
-  },
-];
-
-const principles = [
-  {
-    title: 'Bio-based origin',
-    description: 'Formulated to reduce dependency on fossil-based polymers without compromising brand performance.',
-    icon: Leaf,
-  },
-  {
-    title: 'Biodegradable by design',
-    description: 'Material pathways are engineered to break down under defined conditions with scientific clarity.',
-    icon: Recycle,
-  },
-  {
-    title: 'Premium product feel',
-    description: 'A clean, industrial finish that keeps packaging elegant, credible, and modern.',
-    icon: ShieldCheck,
   },
 ];
 
