@@ -47,8 +47,8 @@ export default function Page() {
             <label className="grid gap-2 text-sm font-medium text-slate-700">
               Interest Type
               <select className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-forest">
-                <option>Water-Soluble Bio-plastic</option>
-                <option>Water-Resistant Bio-plastic</option>
+                <option>Water-Soluble Bioplastic</option>
+                <option>Water-Resistant Bioplastic</option>
                 <option>Custom Development</option>
                 <option>General Partnership</option>
               </select>

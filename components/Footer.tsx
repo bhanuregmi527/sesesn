@@ -3,20 +3,20 @@ import { Instagram, Mail, MessageSquareText, Music2, Sprout, Twitter, Youtube } 
 
 const companyLinks = [
   { label: 'About Us', href: '/about' },
-  { label: 'Sustainability', href: '/sustainability' },
   { label: 'Applications', href: '/applications' },
   { label: 'Contact', href: '/contact' },
+  { label: 'FAQ', href: '/#faq' },
 ];
 
 const productLinks = [
-  { label: 'Water-Soluble Bio-plastic', href: '/products/water-soluble' },
-  { label: 'Water-Resistant Bio-plastic', href: '/products/water-resistant' },
+  { label: 'Water-Soluble Bioplastic', href: '/products/water-soluble' },
+  { label: 'Water-Resistant Bioplastic', href: '/products/water-resistant' },
   { label: 'Product Catalog', href: '/products' },
 ];
 
 const resourceLinks = [
-  { label: 'Compostability vs. Biodegradability', href: '/sustainability' },
-  { label: 'Life Cycle Assessment', href: '/sustainability' },
+  { label: 'Compostability vs. Biodegradability', href: '/#faq' },
+  { label: 'Life Cycle Assessment', href: '/#faq' },
   { label: 'Industry Applications', href: '/applications' },
 ];
 
@@ -47,7 +47,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="max-w-md text-sm leading-7 text-white/75">
-              Scientific bio-plastic solutions built around the SESESN promise: Save Earth, Save Environment, Save Nature.
+              Scientific Bioplastic solutions built around the SESESN promise: Save Earth, Save Environment, Save Nature.
             </p>
             <div className="space-y-1 text-sm text-white/75">
               <p>SESESN, Kathmandu, Nepal</p>
@@ -106,30 +106,6 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-
-            <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-5">
-              <div className="flex items-start gap-3">
-                <span className="mt-1 flex h-10 w-10 items-center justify-center rounded-full bg-sage text-forest">
-                  <Mail className="h-4 w-4" />
-                </span>
-                <div>
-                  <h4 className="text-lg font-semibold">Green Newsletter</h4>
-                  <p className="mt-1 text-sm leading-6 text-white/70">
-                    Receive product updates, sustainability insights, and material science notes.
-                  </p>
-                </div>
-              </div>
-              <form className="mt-4 flex gap-2">
-                <input
-                  type="email"
-                  placeholder="Email address"
-                  className="min-w-0 flex-1 rounded-full border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/45 outline-none transition focus:border-sage"
-                />
-                <button type="submit" className="btn-primary shrink-0 bg-sage text-forest hover:bg-white">
-                  Join
-                </button>
-              </form>
-            </div>
           </div>
         </div>
 

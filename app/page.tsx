@@ -5,7 +5,7 @@ import HomePage from '@/components/pages/HomePage';
 export const metadata: Metadata = buildSEO({
   title: 'SESESN | Save Earth Save Environment Save Nature',
   description:
-    'SESESN builds premium bio-plastic experiences for brands that want to protect products and the planet at the same time.',
+    'SESESN builds premium Bioplastic experiences for brands that want to protect products and the planet at the same time.',
   path: '/',
 });
 

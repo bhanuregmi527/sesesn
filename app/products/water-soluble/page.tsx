@@ -4,8 +4,8 @@ import { ArrowLeft, FlaskConical, Waves } from 'lucide-react';
 import { buildSEO } from '@/components/SEO';
 
 export const metadata: Metadata = buildSEO({
-  title: 'Water-Soluble Bio-plastic',
-  description: 'A defined-use bio-plastic solution for short-life applications and controlled dissolution scenarios.',
+  title: 'Water-Soluble Bioplastic',
+  description: 'A defined-use Bioplastic solution for short-life applications and controlled dissolution scenarios.',
   path: '/products/water-soluble',
 });
 
@@ -18,7 +18,7 @@ export default function Page() {
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.9fr]">
         <div>
-          <p className="section-badge">Water-Soluble Bio-plastic</p>
+          <p className="section-badge">Water-Soluble Bioplastic</p>
           <h1 className="section-title mt-5">Controlled dissolution for short-life, purpose-built applications.</h1>
           <p className="section-copy mt-5">
             This solution is designed for use cases where material removal after use is part of the intended product

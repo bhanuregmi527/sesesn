@@ -8,7 +8,7 @@ const featureIcons = [FlaskConical, Layers3, TimerReset, Package];
 
 const showcaseProducts = [
   {
-    title: 'SESESN Compostable Carry Bag',
+    title: 'SESESN Griphole Bag',
     image: '/products/product-1.jpeg',
     description: 'Premium eco-friendly packaging format with a clean finish for everyday brand applications.',
   },
@@ -28,9 +28,47 @@ const showcaseProducts = [
     description: 'Application-ready product style that supports premium appearance with earth-conscious intent.',
   },
   {
-    title: 'SESESN Compostable Mailer Bag',
+    title: 'SESESN Mailer Bag',
     image: '/products/product-5.jpeg',
     description: 'Showcase-ready sustainable product variant aligned with the SESESN circular material vision.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'What is Biodegradation?',
+    answer:
+      'Biodegradation is the disintegration of materials by bacterial, fungi or other biological means. Although often conflated, biodegradable is distinct from compostable.',
+  },
+  {
+    question: 'What are Biodegradable Plastics?',
+    answer:
+      'Biodegradable plastics are defined by the American Society for Testing and Materials (ASTM) as a degradable plastic in which the degradation results from the action of naturally occurring micro-organisms such as bacterial, fungi and algae.',
+  },
+  {
+    question: 'What are Compostable Plastics?',
+    answer:
+      'Compostable plastics are defined as degrade due to a biological process in which they are converted into carbon dioxide, water and mineral salts, disintegrating within 180 days without producing any toxic material.',
+  },
+  {
+    question: 'What are Oxo-Degradable Plastics?',
+    answer:
+      'Oxo-degradable plastic also known as photo-degradable or d2w degrades in the presence of oxygen and the process in accelerated by UV and heat. One of the claims made for oxo-degradable plastics is they reduce litter as they are biodegradable.',
+  },
+  {
+    question: 'Is there any toxic residue left after biodegradation?',
+    answer:
+      'No, there is no toxic residue, not even traces of metals or microplastics left behind when a SESESN bag decomposes in the soil.',
+  },
+  {
+    question: 'Are SESESN bags certified?',
+    answer:
+      'Yes, we have been certified by American Society for Testing and Materials (ASTM), International Standards ISO 15985/D5511 and ISO 17088, European Standards EN 13431, and by the Ministry of Forrest and Environment for 100% biodegradable and compostable plastics.',
+  },
+  {
+    question: 'Is bioplastics being more expensive than conventional plastics?',
+    answer:
+      'Bioplastics are generally more expensive than conventional plastics due to several factors, including the cost of raw materials, the production process, and the smaller scale of production. Additionally, the development and optimization of bioplastic technology are still evolving, contributing to higher costs. By using SESESN, you are supporting efforts to protect the Earth and all living beings on it, as it helps in reducing energy consumption and promoting sustainability.',
   },
 ];
 
@@ -118,6 +156,32 @@ export default function ProductsPage() {
               })}
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      <section className="eco-shell pb-24">
+        <div className="max-w-3xl">
+          <p className="section-badge">FAQ</p>
+          <h2 className="section-title mt-5">Common questions.</h2>
+          <p className="section-copy mt-5">
+            Definitions and certifications matter. Here are quick answers to the most common questions we receive.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-4">
+          {faqs.map((item) => (
+            <details key={item.question} className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary className="cursor-pointer list-none select-none">
+                <div className="flex items-start justify-between gap-6">
+                  <h3 className="text-lg font-semibold tracking-snug text-forest">{item.question}</h3>
+                  <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full border border-forest/10 bg-forest/5 text-forest transition group-open:rotate-45">
+                    +
+                  </span>
+                </div>
+              </summary>
+              <p className="mt-4 text-sm leading-7 text-slate-600">{item.answer}</p>
+            </details>
+          ))}
         </div>
       </section>
     </>

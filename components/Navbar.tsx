@@ -6,7 +6,6 @@ import { Leaf, Menu, X } from 'lucide-react';
 
 const topLinks = [
   { label: 'About', href: '/about' },
-  { label: 'Sustainability', href: '/sustainability' },
   { label: 'Applications', href: '/applications' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -17,7 +16,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       <div className="border-b border-white/50 bg-white/65 backdrop-blur-xl">
-        <div className="eco-shell flex h-20 items-center justify-between gap-4">
+        <div className="eco-shell flex h-[4.5rem] items-center justify-between gap-4">
           <Link href="/" className="group flex items-center gap-3">
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-forest text-white shadow-eco transition group-hover:-translate-y-0.5">
               <Leaf className="h-5 w-5" />
@@ -26,7 +25,7 @@ export default function Navbar() {
               <span className="block text-xs font-semibold uppercase tracking-[0.35em] text-forest/60">
                 SESESN
               </span>
-              <span className="block text-sm font-medium text-forest">Bio-plastic Solutions</span>
+              <span className="block text-sm font-medium text-forest">Bioplastic Solutions</span>
             </span>
           </Link>
 

@@ -4,8 +4,8 @@ import { ArrowLeft, Droplets, Shield } from 'lucide-react';
 import { buildSEO } from '@/components/SEO';
 
 export const metadata: Metadata = buildSEO({
-  title: 'Water-Resistant Bio-plastic',
-  description: 'Barrier-oriented bio-plastic designed for moisture-sensitive and premium retail applications.',
+  title: 'Water-Resistant Bioplastic',
+  description: 'Barrier-oriented Bioplastic designed for moisture-sensitive and premium retail applications.',
   path: '/products/water-resistant',
 });
 
@@ -18,7 +18,7 @@ export default function Page() {
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.9fr]">
         <div>
-          <p className="section-badge">Water-Resistant Bio-plastic</p>
+          <p className="section-badge">Water-Resistant Bioplastic</p>
           <h1 className="section-title mt-5">Improved moisture tolerance for retail and food-facing applications.</h1>
           <p className="section-copy mt-5">
             Water resistance matters when product appearance, structure, and handling need to hold up in real-world

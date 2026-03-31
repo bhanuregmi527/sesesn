@@ -10,19 +10,19 @@ const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
 
 export const metadata: Metadata = {
   title: {
-    default: 'SESESN | Bio-plastic Solutions',
+    default: 'SESESN | Bioplastic Solutions',
     template: '%s | SESESN',
   },
   description:
-    'SESESN develops bio-based, biodegradable, and compostable bio-plastic solutions for premium eco-conscious brands.',
+    'SESESN develops bio-based, biodegradable, and compostable Bioplastic solutions for premium eco-conscious brands.',
   metadataBase: new URL('https://sesesn.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'SESESN | Bio-plastic Solutions',
+    title: 'SESESN | Bioplastic Solutions',
     description:
-      'Bio-based, biodegradable, and compostable bio-plastic solutions for premium eco-conscious brands.',
+      'Bio-based, biodegradable, and compostable Bioplastic solutions for premium eco-conscious brands.',
     url: 'https://sesesn.com',
     siteName: 'SESESN',
     type: 'website',
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SESESN | Bio-plastic Solutions',
+    title: 'SESESN | Bioplastic Solutions',
     description:
-      'Bio-based, biodegradable, and compostable bio-plastic solutions for premium eco-conscious brands.',
+      'Bio-based, biodegradable, and compostable Bioplastic solutions for premium eco-conscious brands.',
     images: ['/og-sesesn.jpg'],
   },
 };
