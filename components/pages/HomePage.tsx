@@ -319,7 +319,7 @@ export default function HomePage() {
           <div className="mt-8">
             <p className="section-copy">
               We manufacture advanced bioplastic solutions—from raw pellets to customized compounds—designed for
-              real-world applications without the environmental guilt. Whether it's packaging that returns to the earth
+              real-world applications without the environmental guilt. Whether it&apos;s packaging that returns to the earth
               or agricultural films that enrich the soil, every product we create is engineered to close the loop.
             </p>
           </div>

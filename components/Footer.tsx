@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Instagram, MessageSquareText, Music2, Sprout, Twitter, Youtube } from 'lucide-react';
+import { Facebook, Instagram, MessageSquareText, Music2, Sprout, Twitter, Youtube } from 'lucide-react';
 
 const companyLinks = [
   { label: 'About Us', href: '/about' },
@@ -21,6 +21,7 @@ const resourceLinks = [
 ];
 
 const socialLinks = [
+  { label: 'Facebook', href: 'https://www.facebook.com/people/Sesesn/61577668777633/', icon: Facebook },
   { label: 'YouTube', href: 'https://www.youtube.com/@sesesn', icon: Youtube },
   {
     label: 'TikTok',
