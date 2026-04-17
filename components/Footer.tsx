@@ -5,7 +5,7 @@ const companyLinks = [
   { label: 'About Us', href: '/about' },
   { label: 'Applications', href: '/applications' },
   { label: 'Contact', href: '/contact' },
-  { label: 'FAQ', href: '/#faq' },
+  { label: 'FAQ', href: '/products#faq' },
 ];
 
 const productLinks = [
@@ -15,8 +15,8 @@ const productLinks = [
 ];
 
 const resourceLinks = [
-  { label: 'Compostability vs. Biodegradability', href: '/#faq' },
-  { label: 'Life Cycle Assessment', href: '/#faq' },
+  { label: 'Compostability vs. Biodegradability', href: '/products#faq' },
+  { label: 'Life Cycle Assessment', href: '/products#faq' },
   { label: 'Industry Applications', href: '/applications' },
 ];
 

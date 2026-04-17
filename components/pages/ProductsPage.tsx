@@ -8,7 +8,17 @@ const featureIcons = [FlaskConical, Layers3, TimerReset, Package];
 
 const showcaseProducts = [
   {
+    title: 'SESESN Biodegradable Shopping Bag',
+    image: '/products/product-4.jpeg',
+    description: 'Application-ready product style that supports premium appearance with earth-conscious intent.',
+  },
+  {
     title: 'SESESN Griphole Bag',
+    image: '/products/product-5.jpeg',
+    description: 'Showcase-ready sustainable product variant aligned with the SESESN circular material vision.',
+  },
+  {
+    title: 'SESESN Mailer',
     image: '/products/product-1.jpeg',
     description: 'Premium eco-friendly packaging format with a clean finish for everyday brand applications.',
   },
@@ -22,16 +32,7 @@ const showcaseProducts = [
     image: '/products/product-3.jpeg',
     description: 'Flexible and durable presentation option for modern retail and packaging environments.',
   },
-  {
-    title: 'SESESN Biodegradable Shopping Bag',
-    image: '/products/product-4.jpeg',
-    description: 'Application-ready product style that supports premium appearance with earth-conscious intent.',
-  },
-  {
-    title: 'SESESN Mailer Bag',
-    image: '/products/product-5.jpeg',
-    description: 'Showcase-ready sustainable product variant aligned with the SESESN circular material vision.',
-  },
+  
 ];
 
 const faqs = [
@@ -159,7 +160,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="eco-shell pb-24">
+      <section id="faq" className="eco-shell pb-24">
         <div className="max-w-3xl">
           <p className="section-badge">FAQ</p>
           <h2 className="section-title mt-5">Common questions.</h2>

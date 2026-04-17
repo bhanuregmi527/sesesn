@@ -1,23 +1,26 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Compass, Globe2, HeartHandshake, Leaf, ShieldCheck } from 'lucide-react';
+import { Compass, HeartHandshake, Leaf, ShieldCheck } from 'lucide-react';
 
 const values = [
   {
-    title: 'Belief',
-    description: 'We were founded on a simple yet powerful belief: that industry and nature do not have to be at odds',
-    icon: Globe2,
-  },
-  {
-    title: 'Vision',
-    description: 'Save earth, save environment, save nature and a world where our product protect products and the planet at the same time',
+    title: 'Our Vision',
+    description:
+      'Save earth, save environment, save nature and a world where our product protect products and the planet at the same time.',
     icon: Compass,
   },
   {
-    title: 'Mission',
-    description: 'To replace conventional fossil-based plastics with high-performance, sustainable bioplastics that truly honor our name',
+    title: 'Our Mission',
+    description:
+      'To replace conventional fossil-based plastics with high-performance, sustainable bioplastics that truly honor our name.',
     icon: Leaf,
+  },
+  {
+    title: 'What We Do',
+    description:
+      'We manufacture advanced bioplastic solutions—from raw pellets to customized compounds—designed for real-world applications without the environmental guilt.',
+    icon: ShieldCheck,
   },
 ];
 
@@ -51,8 +54,12 @@ export default function AboutPage() {
         <div className="max-w-3xl">
           <p className="section-badge">About SESESN</p>
           <h1 className="section-title mt-5">The Name Behind the Mission</h1>
+          <p className="mt-4 text-lg font-semibold tracking-snug text-forest">
+            &quot;Collaboration together for a sustainable future&quot;
+          </p>
           <p className="section-copy mt-5">
-            SESESN stands for Save Earth Save Environment Save Nature. It is both our purpose and our design filter.
+            SESESN stands for Save Earth, Save Environment, Save Nature. More than just a name, it is the foundation of
+            everything we do.
           </p>
         </div>
 
@@ -76,10 +83,28 @@ export default function AboutPage() {
             <h2 className="mt-4 text-3xl font-semibold tracking-snug">The Name Behind the Mission</h2>
             <div className="mt-8 space-y-4 text-sm leading-7 text-white/75">
               <p>
-                We were founded on a simple yet powerful belief: that industry and nature do not have to be at odds.
+                We exist to turn intention into action—transforming the way the world produces and consumes bioplastic
+                by putting the planet first.
               </p>
               <p>
-                The SESESN name carries our responsibility to create materials that support better business and a healthier planet.
+                It is both our purpose and our design filter: make material that work well, look refined and move
+                responsibly through the world.
+              </p>
+              <p>
+                We are a forward-thinking enterprise dedicated to promoting environmental sustainability through the
+                production of high-quality biodegradable bags. Our mission is to reduce plastic pollution by providing
+                eco-friendly alternatives that are both practical and affordable.
+              </p>
+              <p>
+                Driven by innovation and responsibility, we utilize advanced technology and sustainable raw materials to
+                manufacture bags that decompose naturally without harming the environment. Our team is committed to
+                maintaining strict quality standards while continuously improving our production processes.
+              </p>
+              <p>
+                We believe that small changes can make a big impact. By collaborating with businesses, communities, and
+                stakeholders, we aim to encourage the shift toward greener practices and contribute to a cleaner,
+                healthier future. Our vision is to become a leading provider of biodegradable packaging solutions,
+                supporting global efforts to protect the environment for future generations.
               </p>
             </div>
           </div>
