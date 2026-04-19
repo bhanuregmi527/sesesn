@@ -1,8 +1,9 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
-import { Leaf, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const topLinks = [
   { label: 'About', href: '/about' },
@@ -18,8 +19,15 @@ export default function Navbar() {
       <div className="border-b border-white/50 bg-white/65 backdrop-blur-xl">
         <div className="eco-shell flex h-[4.5rem] items-center justify-between gap-4">
           <Link href="/" className="group flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-forest text-white shadow-eco transition group-hover:-translate-y-0.5">
-              <Leaf className="h-5 w-5" />
+            <span className="relative h-11 w-11 overflow-hidden rounded-full shadow-eco transition group-hover:-translate-y-0.5">
+              <Image
+                src="/sesesn-logo.jpeg"
+                alt="SESESN logo"
+                fill
+                sizes="44px"
+                className="object-cover"
+                priority
+              />
             </span>
             <span>
               <span className="block text-xs font-semibold uppercase tracking-[0.35em] text-forest/60">

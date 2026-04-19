@@ -310,21 +310,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <section className="eco-shell pb-8 lg:pb-10">
-        <div className="max-w-3xl">
-          <p className="section-badge">What We Do</p>
-          <h2 className="section-title mt-5">What We Do.</h2>
-
-          <div className="mt-8">
-            <p className="section-copy">
-              We manufacture advanced bioplastic solutions—from raw pellets to customized compounds—designed for
-              real-world applications without the environmental guilt. Whether it&apos;s packaging that returns to the earth
-              or agricultural films that enrich the soil, every product we create is engineered to close the loop.
-            </p>
-          </div>
-        </div>
-      </section>
       
       <section className="eco-shell pb-10 lg:pb-12">
         <div className="max-w-3xl">

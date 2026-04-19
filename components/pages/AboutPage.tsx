@@ -13,13 +13,13 @@ const values = [
   {
     title: 'Our Mission',
     description:
-      'To replace conventional fossil-based plastics with high-performance, sustainable bioplastics that truly honor our name.',
+      'To replace conventional fossil-based plastics with high-performance, sustainable bioplastics that truly honor our name. We believe that protecting the Earth, preserving the Environment, and restoring Nature are not separate goals-they are one and the same.',
     icon: Leaf,
   },
   {
     title: 'What We Do',
     description:
-      'We manufacture advanced bioplastic solutions—from raw pellets to customized compounds—designed for real-world applications without the environmental guilt.',
+      'We manufacture advanced bioplastic solutions—from raw pellets to customized compounds—designed for real-world applications without the environmental guilt. Whether it&apos;s packaging that returns to the earth or agricultural films that enrich the soil, every product we create is engineered to close the loop.',
     icon: ShieldCheck,
   },
 ];
@@ -53,7 +53,7 @@ export default function AboutPage() {
       <section className="eco-shell py-20 lg:py-28">
         <div className="max-w-3xl">
           <p className="section-badge">About SESESN</p>
-          <h1 className="section-title mt-5">The Name Behind the Mission</h1>
+          <h1 className="section-title mt-5">Naturally Forward</h1>
           <p className="mt-4 text-lg font-semibold tracking-snug text-forest">
             &quot;Collaboration together for a sustainable future&quot;
           </p>
@@ -79,32 +79,18 @@ export default function AboutPage() {
       <section className="eco-shell pb-24">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[2rem] bg-forest p-8 text-white">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sage/90">Our Story</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-snug">The Name Behind the Mission</h2>
-            <div className="mt-8 space-y-4 text-sm leading-7 text-white/75">
+            {/* <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sage/90">Our Story</p> */}
+            {/* <h2 className="mt-4 text-3xl font-semibold tracking-snug">The Name Behind the Mission</h2> */}
+            <div className="mt-8 space-y-4 text-m leading-7 text-white/75">
               <p>
-                We exist to turn intention into action—transforming the way the world produces and consumes bioplastic
-                by putting the planet first.
+               SESESN is a forward-thinking production company dedicated to one critical mission: replacing persistent plastics with innovative, biodegradable alternatives. Our name stands for Save Earth, Save Environment, Save Nature. More than just a name, it is the foundation of everything we do.
               </p>
               <p>
-                It is both our purpose and our design filter: make material that work well, look refined and move
-                responsibly through the world.
+                Born from a commitment to industrial ecology, we specialize in engineering high-performance consumables that return to nature safely-without compromising on quality or convenience.
+                We believe that waste is a design flaw.
               </p>
               <p>
-                We are a forward-thinking enterprise dedicated to promoting environmental sustainability through the
-                production of high-quality biodegradable bags. Our mission is to reduce plastic pollution by providing
-                eco-friendly alternatives that are both practical and affordable.
-              </p>
-              <p>
-                Driven by innovation and responsibility, we utilize advanced technology and sustainable raw materials to
-                manufacture bags that decompose naturally without harming the environment. Our team is committed to
-                maintaining strict quality standards while continuously improving our production processes.
-              </p>
-              <p>
-                We believe that small changes can make a big impact. By collaborating with businesses, communities, and
-                stakeholders, we aim to encourage the shift toward greener practices and contribute to a cleaner,
-                healthier future. Our vision is to become a leading provider of biodegradable packaging solutions,
-                supporting global efforts to protect the environment for future generations.
+               Every SESESN product is formulated to serve its purpose effectively, then biodegrade in a timely manner across real-world environments (soil, freshwater, or industrial composting facilities).
               </p>
             </div>
           </div>

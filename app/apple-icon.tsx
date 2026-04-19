@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og';
+import { headers } from 'next/headers';
 
 export const size = {
   width: 180,
@@ -7,7 +8,15 @@ export const size = {
 
 export const contentType = 'image/png';
 
+export const runtime = 'edge';
+
 export default function AppleIcon() {
+  const headerList = headers();
+  const host = headerList.get('x-forwarded-host') ?? headerList.get('host');
+  const forwardedProto = headerList.get('x-forwarded-proto');
+  const proto = forwardedProto ?? (host?.includes('localhost') || host?.startsWith('127.0.0.1') ? 'http' : 'https');
+  const logoUrl = host ? `${proto}://${host}/sesesn-logo.jpeg` : 'https://sesesn.com/sesesn-logo.jpeg';
+
   return new ImageResponse(
     (
       <div
@@ -17,31 +26,22 @@ export default function AppleIcon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#1B4332',
+          background: '#FFFFFF',
           borderRadius: 48,
+          overflow: 'hidden',
         }}
       >
-        <svg
-          width="150"
-          height="150"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11 20a7 7 0 0 1-2.2-13.7C15.3 3.6 22 5 22 5s-1.4 6.7-4.3 13.2A7 7 0 0 1 11 20Z"
-            stroke="white"
-            strokeWidth="2"
-            strokeLinejoin="round"
-          />
-          <path d="M2 22s4-3 9-3" stroke="white" strokeWidth="2" strokeLinecap="round" />
-          <path
-            d="M15 6c-2 2-6 3.5-7 7"
-            stroke="white"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
+        <img
+          src={logoUrl}
+          alt="SESESN"
+          width={180}
+          height={180}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
       </div>
     ),
     {

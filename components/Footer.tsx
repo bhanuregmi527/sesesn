@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Facebook, Instagram, MessageSquareText, Music2, Sprout, Twitter, Youtube } from 'lucide-react';
+import Image from 'next/image';
+import { Facebook, Instagram, MessageSquareText, Music2, Twitter, Youtube } from 'lucide-react';
 
 const companyLinks = [
   { label: 'About Us', href: '/about' },
@@ -39,8 +40,8 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div className="space-y-5">
             <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-sage text-forest">
-                <Sprout className="h-5 w-5" />
+              <span className="relative h-11 w-11 overflow-hidden rounded-full bg-white">
+                <Image src="/sesesn-logo.jpeg" alt="SESESN logo" fill sizes="44px" className="object-cover" />
               </span>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.35em] text-sage/80">SESESN</p>
